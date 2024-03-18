@@ -1,0 +1,89 @@
+.Search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 75vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.headerContainer {
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  font-size: 2.8em;
+  line-height: 1.2em;
+  font-weight: 100;
+}
+
+/* Style de la barre de recherche */
+.input-container {
+  border: 1px solid #ccc; /* Bordure */
+  border-radius: 5px; /* Coins arrondis */
+  padding: 10px; /* Espacement interne */
+  width: 300px; /* Largeur souhaitée */
+}
+
+.searchInputs {
+  display: flex;
+}
+
+.searchIcon {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  display: grid;
+  place-items: center;
+}
+
+.dataResult {
+  position: absolute;
+  margin-top: 0px;
+  width: 322px;
+  height: auto;
+  max-height: 200px;
+  display: block;
+  background-color: white;
+  box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+/* La ligne qui suit peut etre décommentée si on veut enlever la scroll-bar*/
+/*.dataResult::-webkit-scrollbar {
+  display: none;
+}*/
+
+.dataResult .dataList {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.dataList p {
+  margin-left: 10px;
+}
+a {
+  text-decoration: none;
+}
+
+a:hover{
+  background-color: gray;
+}
+
+#clearBar, #searchWord {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .text {
+    font-size: 2em;
+  }
+  .input-container {
+    width: 200px; /* Largeur souhaitée */
+  }
+}
